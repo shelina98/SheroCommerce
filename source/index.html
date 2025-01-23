@@ -64,6 +64,35 @@
          <button  class="oulineButton">Shop Now </button>
      </div>
     </div>
+
+    <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide"> <div class="product"><img src="./assets/gray.png"/>
+                <p>TITLE</p>
+            </div></li>
+            <li class="glide__slide"> <div class="product"><img src="./assets/blue.png"/>
+                <p>TITLE</p>
+            </div></li>
+            <li class="glide__slide"> <div class="product"><img src="./assets/apple.PNG"/>
+                <p>TITLE</p>
+            </div></li>
+          </ul>
+        </div>
+
+          <!-- Navigation Controls -->
+  <div class="glide__arrows" data-glide-el="controls">
+    <div data-glide-el="controls">
+        <button data-glide-dir="<<" class="basicButton">Start</button>
+        <button data-glide-dir=">>">End</button>
+      </div>
+  
+  </div>
+  <div class="glide__arrows" data-glide-el="controls">
+    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+  </div>
+      </div>
     <div class="products"> 
         <div class="product"><img src="./assets/gray.png"/>
             <p>TITLE</p>
@@ -71,7 +100,7 @@
         <div class="product"><img src="./assets/blue.png">
             <p>TITLE</p>
         </div>
-        <div class="product"><img src="./assets/gray.png"/>
+        <div class="product"><img src="./assets/apple.PNG"/>
             <p>TITLE</p>
         </div>
     </div>
@@ -109,3 +138,13 @@
 
 </body>
 </html>
+
+<script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+
+<script>
+  new Glide('.glide', {
+  type: 'carousel',
+  startAt: 0,
+  perView: 3
+}).mount()
+</script>
