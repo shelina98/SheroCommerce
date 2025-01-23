@@ -1,0 +1,7 @@
+.navStyle {
+    display: flex;
+    height:20px;
+    flex-wrap: wrap;
+    flex-direction: column ;
+    justify-content: space-between;
+}
