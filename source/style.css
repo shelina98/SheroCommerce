@@ -1,3 +1,12 @@
+/*NAVS*/
+.promotions {
+    background-color: black;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .navStyle {
     display: flex;
     height:28px;
@@ -16,12 +25,8 @@ display: flex;
     justify-content: flex-end;
 }
 
-.promotions {
-    background-color: black;
-    height: 28px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.whiteFont12px {
+    color: white; font-size: 12px;
 }
 
 .dropdownMenu{
@@ -53,4 +58,17 @@ margin-right: 2px
 .navButtons:hover {
     background-color: lightgray;
     border-radius: 2px;
+}
+
+/*BODY*/
+
+.relativeMovingContainer {
+    position: relative; width: 100vw;
+}
+
+.oulineButton {
+    color: white;
+    background: transparent;
+    outline: white;
+    border: 1px solid white;
 }
