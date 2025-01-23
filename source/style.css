@@ -48,6 +48,7 @@ margin-right: 2px
 }
 .dropdownButtons {
     font-size: 10px;
+    margin-right: 20px;
 }
 .navButtons:hover {
     background-color: lightgray;
