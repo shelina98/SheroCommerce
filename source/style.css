@@ -72,3 +72,10 @@ margin-right: 2px
     outline: white;
     border: 1px solid white;
 }
+
+.products {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
