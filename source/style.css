@@ -15,6 +15,13 @@ display: flex;
     justify-content: flex-end;
 }
 
+.promotions {
+    background-color: black;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .marginright5px {
 margin-right: 2px
 }
