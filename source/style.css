@@ -4,13 +4,27 @@
     flex-wrap: wrap;
     flex-direction: column ;
     justify-content: space-between;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;  
 }
+
+.navStyle :nth-child(1) {
+display: flex;
+}
+.navStyle :nth-child(2) {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.marginright5px {
+margin-right: 2px
+}
+    
 .basicButton {
-    font-size: 16px;              
+    font-size: 12px;              
     font-weight: bold;             
     color: black;      
-    padding: 3px;             
+    padding: 5px;            
+    display: inline; 
     background-color: white;       
     border: none;                    
     cursor: pointer; 
