@@ -110,6 +110,7 @@ display: flex;
   /* Third Task */
 
   @media(max-width : 1800px) {
+
     .products {
         display: grid; 
         position: relative;
@@ -117,6 +118,31 @@ display: flex;
         gap: 20px; 
         width: 100%; 
     }
-    
-  }
- 
+
+}
+    @media(max-width : 600px) {
+        .products {
+            grid-template-columns: 1fr;
+        }
+
+        .gridUsingDiv {
+            grid-template-columns: 1fr;
+            width: 100%; 
+        }
+        .testimonials  {
+            height: 400px;
+        }
+
+        .promotions, .navStyle, .dropdownMenu {
+            display: none;
+        }
+  } 
+
+
+  
+  .cel {
+    display: flex !important;
+       align-self: flex-end;
+       justify-self: end;
+       padding: 5px;
+        }

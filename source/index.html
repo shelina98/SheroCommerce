@@ -26,7 +26,7 @@
 
 </head>
 <body>
-<section class="header">
+<section class="header"> 
     <div class="promotions"><p class="whiteFont12px">
         Use this banner to advertise a special promotion -20% off!
     </p></div>
@@ -54,6 +54,9 @@
         <button  class="basicButton dropdownButtons">Stabilizer ▼</button>
         <button  class="basicButton dropdownButtons">Displays ▼</button>
         <button  class="basicButton dropdownButtons">Notions ▼</button>
+    </nav>
+    <nav class="cel"> 
+        <i class="fas fa-bars"></i>
     </nav>
 </section>
 <section class="body">
@@ -189,6 +192,9 @@
     1800: {
       perView: 2 
     },
+    600: {
+      perView: 1 
+    },
 }
 }).mount()
 </script>
@@ -216,4 +222,13 @@
 
     // Mount the Glide instance
     glide.mount();
+</script>
+<script>
+     const navCel = document.querySelector('.cel');
+     const screenWidthElement = document.getElementById('screen-width');
+     if(screenWidthElement < 600) {
+        navCel.classList.add('cel')
+     } else {
+        navCel.classList.add('cel')
+     }
 </script>
