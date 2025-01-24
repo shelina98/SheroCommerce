@@ -169,6 +169,7 @@
         <div class="glide__arrows" style=" display:flex; justify-self:  center;" data-glide-el="controls">
             <div data-glide-el="controls">
             <button class="glide__arrow glide__arrow--left basicButton navButtons" data-glide-dir="<"><</button> 
+            <span id="carousel-position">1</span>
             <button class="glide__arrow glide__arrow--right basicButton navButtons"  data-glide-dir=">">></button>
             </div>
         </div>
@@ -192,5 +193,27 @@
 }).mount()
 </script>
 <script>
-    new Glide('.glideT').mount()
-  </script>
+
+ const glide = new Glide('.glideT', {
+      type: 'carousel',
+      startAt: 0, 
+      perView: 1 
+    });
+
+    // Track the position of the carousel
+    const positionElement = document.getElementById('carousel-position');
+
+    // Function to update the position display
+    const updatePosition = () => {
+      positionElement.textContent = glide.index + 1;
+    };
+
+    // Update position when the carousel is mounted
+    glide.on('mount.after', updatePosition);
+
+    // Update position when the carousel slides
+    glide.on('move.after', updatePosition);
+
+    // Mount the Glide instance
+    glide.mount();
+</script>
