@@ -125,9 +125,11 @@
 </section>
 <section class="footer">
     <div class="testimonials">
-        <p style="color: gray;
-    font-size: 18px;"> TESTIMONIALS</p>
-        <div style="padding:0 50px;">Lorem Ipsum is simply dummy text of 
+    <p style="color: gray; font-size: 18px;"> TESTIMONIALS</p>
+    <div class="glideT" style="display: grid">
+        <div class="glide__track" data-glide-el="track">
+        <ul class="glide__slides">
+          <li class="glide__slide">  <div style="padding:0 50px;">Lorem Ipsum is simply dummy text of 
             the printing and typesetting industry. 
             Lorem Ipsum has been the industry's standard
              dummy text ever since the 1500s, when an unknown 
@@ -137,7 +139,42 @@
               It was popularised in the 1960s with the release of Letraset sheets containing 
               
               Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.       </p>
+        </div></li>
+         <li class="glide__slide">  <div style="padding:0 50px;">Lorem Ipsum is simply dummy text of 
+            the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard
+             dummy text ever since the 1500s, when an unknown 
+             printer took a galley of type and scrambled it to make a
+              type specimen book. It has survived not only five centuries, 
+              but also the leap into electronic typesetting, remaining essentially unchanged. 
+              It was popularised in the 1960s with the release of Letraset sheets containing 
+              
+              Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.       </p>
+        </div></li>
+        <li class="glide__slide">  
+            <div style="padding:0 50px;">Lorem Ipsum is simply dummy text of 
+            the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard
+             dummy text ever since the 1500s, when an unknown 
+             printer took a galley of type and scrambled it to make a
+              type specimen book. It has survived not only five centuries, 
+              but also the leap into electronic typesetting, remaining essentially unchanged. 
+              It was popularised in the 1960s with the release of Letraset sheets containing 
+              
+              Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.       </p>
+        </div>
+        </li>
+        </ul>
+        <!-- Navigation Controls -->
+        <div class="glide__arrows" style=" display:flex; justify-self:  center;" data-glide-el="controls">
+            <div data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left basicButton navButtons" data-glide-dir="<"><</button> 
+            <button class="glide__arrow glide__arrow--right basicButton navButtons"  data-glide-dir=">">></button>
+            </div>
+        </div>
     </div>
+            
+</div>
 </section>
 </body>
 </html>
@@ -154,3 +191,6 @@
 }
 }).mount()
 </script>
+<script>
+    new Glide('.glideT').mount()
+  </script>
