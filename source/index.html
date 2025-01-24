@@ -55,7 +55,7 @@
         <button  class="basicButton dropdownButtons">Displays ▼</button>
         <button  class="basicButton dropdownButtons">Notions ▼</button>
     </nav>
-    <nav class="cel"> 
+    <nav id="cel" class="cel"> 
         <i class="fas fa-bars"></i>
     </nav>
 </section>
@@ -222,13 +222,4 @@
 
     // Mount the Glide instance
     glide.mount();
-</script>
-<script>
-     const navCel = document.querySelector('.cel');
-     const screenWidthElement = document.getElementById('screen-width');
-     if(screenWidthElement < 600) {
-        navCel.classList.add('cel')
-     } else {
-        navCel.classList.add('cel')
-     }
 </script>
